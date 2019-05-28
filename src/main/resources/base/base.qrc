@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="base">
+    <file>txt.png</file>
+    <file>file.png</file>
+    <file>excel.png</file>
+  </qresource>
+</RCC>

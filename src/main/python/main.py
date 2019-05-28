@@ -1,12 +1,16 @@
 from fbs_runtime.application_context import ApplicationContext
-from PyQt5.QtWidgets import QMainWindow
+from ui.textract import TextractGui
 
 import sys
 
-if __name__ == '__main__':
-    appctxt = ApplicationContext()       # 1. Instantiate ApplicationContext
-    window = QMainWindow()
-    window.resize(250, 150)
+
+def main():
+    appctxt = ApplicationContext()
+    window = TextractGui()
     window.show()
-    exit_code = appctxt.app.exec_()      # 2. Invoke appctxt.app.exec_()
+    exit_code = appctxt.app.exec_()
     sys.exit(exit_code)
+
+
+if __name__ == '__main__':
+    main()
